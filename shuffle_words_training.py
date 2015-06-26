@@ -85,7 +85,7 @@ nouns = ["дорога","картина","бумага","фотография","
 total_arm_words = []
 total_leg_words = []
 total_nouns = []
-for i in range(0,12):
+for i in range(0,4):
     random.shuffle(arm_words)    
     total_arm_words += arm_words 
     random.shuffle(leg_words)
@@ -96,11 +96,11 @@ for i in range(0,12):
 #print("\narmwords:\n")    
 #print(*total_arm_words, sep='\n')
 
-total_experiment_sb_order = [[0 for x in range(36)] for x in range(9)] #create 2d array for holding total seq of sb 
+total_experiment_sb_order = [[0 for x in range(12)] for x in range(9)] #create 2d array for holding total seq of sb 
 
 for i in range(0,9):
     sb_types = ['a','l','n']
-    for k in range(0,12):
+    for k in range(0,4):
         sb_types += ['a','l','n']
     
     random.shuffle(sb_types)
@@ -154,7 +154,7 @@ if not os.path.exists(path_to_experiment_folder+'/recorded_responces/'+subject_i
 
 #print("Start forming function calls...\n")
 for i in range(0,9): 
-    create_cur_sb_array(total_arm_words[48*i:48*(i+1)], total_leg_words[48*i:48*(i+1)], total_nouns[48*i:48*(i+1)], total_experiment_sb_order[i])
+    create_cur_sb_array(total_arm_words[16*i:16*(i+1)], total_leg_words[16*i:16*(i+1)], total_nouns[16*i:16*(i+1)], total_experiment_sb_order[i])
     if current_design[i] != 'n':
         cur_al = {
             'a' : "arm",
