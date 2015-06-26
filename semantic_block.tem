@@ -1,0 +1,112 @@
+trial{
+	start_delay = 0;#$start_delay;
+	trial_duration = 19000;#stimuli_length;
+	
+	stimulus_event{
+		picture{
+			line_graphic{
+				coordinates = -12,    0, 12, 0;
+				coordinates =    0, -12,   0, 12;
+				line_width  = 0.1;
+			};
+			x = 0;
+			y = 0;
+		} cross_picture;
+		
+		time      = 0;
+		duration  = 300; #300ms
+		code      = "cross";
+		#port_code = 4; #do we need it?
+	} show_cross;
+
+	stimulus_event{	
+		picture{
+			text{
+				caption = " ";
+				#caption = caption_1;
+			} caption_1_text;
+			x = 0;
+			y = 0;
+		} caption_1_pic;
+		#code     = caption_1;
+		time     = 300;
+		duration = 100;
+	} show_caption_1;
+	
+	stimulus_event{	
+		picture{
+			text{
+				caption = " ";
+				#caption = caption_2;
+			} caption_2_text;
+			x = 0;
+			y = 0;
+		} caption_2_pic;
+		deltat   = 600;
+		duration = 100;
+		#code     = caption_2;
+	} show_caption_2;
+	
+	stimulus_event{	
+		picture{
+			text{
+				caption = " ";
+				#caption = caption_3;
+			} caption_3_text;
+			x = 0;
+			y = 0;
+		} caption_3_pic;
+		deltat   = 600;
+		duration = 100;
+		#code     = caption_3;
+	} show_caption_3;
+	
+	stimulus_event{	
+		picture{
+			text{
+				caption = " ";
+				#caption = caption_4;
+			} caption_4_text;
+			x = 0;
+			y = 0;
+		} caption_4_pic;
+		deltat   = 600;
+		duration = 100;
+		#code     = caption_4;
+	} show_caption_4;
+	
+	sound{
+		wavefile{filename = "C:/Documents and Settings/Admin/Рабочий стол/Experiments/Nastia PhD/sounds/response_signal.wav";};
+	};
+	deltat = 6100;
+	duration = 400;
+
+	sound_recording {
+		base_filename = "C:/Documents and Settings/Admin/Рабочий стол/Experiments/Nastia PhD/recorded_responces/response";
+		use_counter   = false;
+		use_date_time = true;
+		duration		  = 10000;
+	} sound_response_recording_event; 
+	deltat   = 300;
+	duration = 10000;
+	
+} current_semantic_block;
+
+trial{
+	start_delay    = 0;
+	trial_duration = stimuli_length;
+	
+	stimulus_event{	
+		picture{
+			text{
+				caption = " ";
+				#caption = caption_1;
+			} intro_text;
+			x = 0;
+			y = 0;
+		} intro_pic;
+		code     = "intro text";
+		time     = 0;
+		duration = 5000;
+	} show_intro_title_st_event;
+} show_intro_title_trial;
