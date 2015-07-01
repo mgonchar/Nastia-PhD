@@ -1,5 +1,5 @@
 ﻿'''
-Created on 09 июня 2015 г.
+Created on 09 june 2015 г.
 
 @author: miroslavgoncharenko; anastsianikolaeva
 '''

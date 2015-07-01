@@ -108,7 +108,12 @@
 </ftp>
 <idc>0</idc>
 <idt>0</idt>
-<ip_chans></ip_chans>
+<ip_chans>
+<chan>
+<name>left_pedal_channel</name>
+<pindex>4294967295</pindex>
+</chan>
+</ip_chans>
 <isb>10000</isb>
 <lfd>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\logs</lfd>
 <lnb>2</lnb>
@@ -301,12 +306,12 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>1</ibn>
-<ibn>2</ibn>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
 <ibn>Enter</ibn>
 <idn>Клавиатура</idn>
-<offset>2</offset>
-<offset>3</offset>
+<offset>42</offset>
+<offset>54</offset>
 <offset>28</offset>
 </idv>
 <sfn>all_scenarios</sfn>
@@ -315,12 +320,12 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>1</ibn>
-<ibn>2</ibn>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
 <ibn>Enter</ibn>
 <idn>Клавиатура</idn>
-<offset>2</offset>
-<offset>3</offset>
+<offset>42</offset>
+<offset>54</offset>
 <offset>28</offset>
 </idv>
 <sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\testing_sb.sce</sfn>
@@ -329,12 +334,12 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>1</ibn>
-<ibn>2</ibn>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
 <ibn>Enter</ibn>
 <idn>Клавиатура</idn>
-<offset>2</offset>
-<offset>3</offset>
+<offset>42</offset>
+<offset>54</offset>
 <offset>28</offset>
 </idv>
 <sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_input_simple_series.sce</sfn>
@@ -401,7 +406,7 @@
 <swp>1</swp>
 <text_encoding>utf8</text_encoding>
 <trigger_mode>
-<cn></cn>
+<cn>left_pedal_channel</cn>
 <m>0</m>
 <v></v>
 <vt>0</vt>
