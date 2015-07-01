@@ -39,6 +39,13 @@
 <efs>
 <filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\testing_sb.sce</filename>
 <filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_input_simple_series.sce</filename>
+<filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_input_hard_series.sce</filename>
+<filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_pause_hard_series.sce</filename>
+<filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_pause_simple_series.sce</filename>
+<filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_input_hard_series.sce</filename>
+<filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_input_simple_series.sce</filename>
+<filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_pause_hard_series.sce</filename>
+<filename>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_pause_simple_series.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version>0.001</exp_version>
@@ -74,6 +81,27 @@
 <asn>
 <sid>-2</sid>
 </asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
+<asn>
+<sid>-2</sid>
+</asn>
 </ssa>
 </man>
 </exparam>
@@ -87,6 +115,13 @@
 <ftp>
 <ccc>0</ccc>
 <do_upload>
+<sce>1</sce>
+<sce>1</sce>
+<sce>1</sce>
+<sce>1</sce>
+<sce>1</sce>
+<sce>1</sce>
+<sce>1</sce>
 <sce>1</sce>
 <sce>1</sce>
 </do_upload>
@@ -189,6 +224,13 @@
 <restricted>1</restricted>
 <scale>1</scale>
 </axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Руль</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
 <device_type>2</device_type>
 <dx_device_type>18</dx_device_type>
 <max_raw_pos>65535</max_raw_pos>
@@ -199,6 +241,100 @@
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
 <name>Клавиатура</name>
+</device>
+<device>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Wheel</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<device_type>2</device_type>
+<dx_device_type>0</dx_device_type>
+<max_raw_pos>65535</max_raw_pos>
+<min_raw_pos>0</min_raw_pos>
+<name>HID-совместимая мышь</name>
+</device>
+<device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>Клавиатура HID</name>
+</device>
+<device>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<abs_axis>
+<dead_zone>0</dead_zone>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<saturation>1</saturation>
+</abs_axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>X-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Y-axis</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<axis>
+<max>1000</max>
+<min>-1000</min>
+<name>Wheel</name>
+<restricted>1</restricted>
+<scale>1</scale>
+</axis>
+<device_type>2</device_type>
+<dx_device_type>0</dx_device_type>
+<max_raw_pos>65535</max_raw_pos>
+<min_raw_pos>0</min_raw_pos>
+<name>HID-совместимая мышь 1</name>
+</device>
+<device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>Клавиатура HID 1</name>
 </device>
 <device>
 <device_type>3</device_type>
@@ -314,6 +450,20 @@
 <offset>54</offset>
 <offset>28</offset>
 </idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
 <sfn>all_scenarios</sfn>
 </sce>
 <sce>
@@ -342,7 +492,217 @@
 <offset>54</offset>
 <offset>28</offset>
 </idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
 <sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_input_simple_series.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
+<ibn>Enter</ibn>
+<idn>Клавиатура</idn>
+<offset>42</offset>
+<offset>54</offset>
+<offset>28</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
+<sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_input_hard_series.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
+<ibn>Enter</ibn>
+<idn>Клавиатура</idn>
+<offset>42</offset>
+<offset>54</offset>
+<offset>28</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
+<sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_pause_hard_series.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
+<ibn>Enter</ibn>
+<idn>Клавиатура</idn>
+<offset>42</offset>
+<offset>54</offset>
+<offset>28</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
+<sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\arm_on_pause_simple_series.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
+<ibn>Enter</ibn>
+<idn>Клавиатура</idn>
+<offset>42</offset>
+<offset>54</offset>
+<offset>28</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
+<sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_input_hard_series.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
+<ibn>Enter</ibn>
+<idn>Клавиатура</idn>
+<offset>42</offset>
+<offset>54</offset>
+<offset>28</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
+<sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_input_simple_series.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
+<ibn>Enter</ibn>
+<idn>Клавиатура</idn>
+<offset>42</offset>
+<offset>54</offset>
+<offset>28</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
+<sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_pause_hard_series.sce</sfn>
+</sce>
+<sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>Shift</ibn>
+<ibn>Right Shift</ibn>
+<ibn>Enter</ibn>
+<idn>Клавиатура</idn>
+<offset>42</offset>
+<offset>54</offset>
+<offset>28</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID</idn>
+<offset>48</offset>
+</idv>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<ibn>B</ibn>
+<idn>Клавиатура HID 1</idn>
+<offset>48</offset>
+</idv>
+<sfn>C:\Documents and Settings\Admin\Рабочий стол\Experiments\Nastia PhD\leg_on_pause_simple_series.sce</sfn>
 </sce>
 <sct>
 <capture_device>
