@@ -14,6 +14,8 @@ global_idx = 0
 input_idx = 0
 train_type_idx = 0
 
+#tst_time = 0
+
 current_delays = []
 previous_delays = []
 current_milli_time = lambda: int(round(time.time() * 1000))
@@ -41,12 +43,12 @@ def succeed_to_train():
         else:
             prefix = 'hard_seq_leg'
     
-    file = open(path_to_experiment_folder+'/logs/'+subject_id+'/'+subject_id+'_trained_freq',mode)
-    file.write(prefix+' = '+statistics.mean(current_delays)+'\n')
+    file = open(path_to_experiment_folder+'/logs/'+subject_id+'/'+subject_id+'_trained_freq.txt',mode)
+    file.write(prefix+' = '+str(statistics.mean(current_delays))+'\n')
     file.close()
     
     if global_idx == 1 and train_type_idx == 1:
-        sys.exit() # terminate the script. This is the end...
+        os._exit(0)  #sys.exit(0) # terminate the script. This is the end...
     elif global_idx == 0 and train_type_idx == 1:
         global_idx = 1    
         train_type_idx = 0
@@ -70,7 +72,7 @@ def keyPress(e):
         handleInput('r', time)
         
 def handleInput(rl, time):
-    global current_input, global_idx, training_pattern, tmp_time, previous_delays, current_delays, shifted_training_pattern, input_idx, timer_started, exit_timer  
+    global current_input, global_idx, training_pattern, tmp_time, previous_delays, current_delays, shifted_training_pattern, input_idx, timer_started, exit_timer#, tst_time
     if len(current_input) < 8:        
         current_input += rl
         if current_input != training_pattern[global_idx][:len(current_input)]:
@@ -98,7 +100,8 @@ def handleInput(rl, time):
                 previous_delays.append(delta)
     else:
         current_input = current_input[1:] + rl
-        shifted_training_pattern = shifted_training_pattern[-1] + shifted_training_pattern[:-1]
+        shifted_training_pattern = shifted_training_pattern[1:] + shifted_training_pattern[0]
+
         if shifted_training_pattern == current_input:
             delta = time-tmp_time
             tmp_time = time
@@ -118,9 +121,12 @@ def handleInput(rl, time):
         input_idx = 0
         if(uniform_input()):
             if not timer_started:
-                exit_timer = Timer(20.0, succeed_to_train)
+                exit_timer = Timer(10.0, succeed_to_train)
                 exit_timer.start()
                 timer_started = True
+                #tst_time = current_milli_time()
+            #else:
+            #    print ("timer ticking for: " + str(current_milli_time() - tst_time) + "\n")
         else:
             if timer_started:
                 exit_timer.cancel()
