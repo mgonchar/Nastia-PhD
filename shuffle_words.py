@@ -100,7 +100,7 @@ total_experiment_sb_order = [[0 for x in range(36)] for x in range(9)] #create 2
 
 for i in range(0,9):
     sb_types = ['a','l','n']
-    for k in range(0,12):
+    for k in range(0,11):
         sb_types += ['a','l','n']
     
     random.shuffle(sb_types)
