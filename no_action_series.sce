@@ -1,8 +1,8 @@
 default_font_size = 48;
 
-#response_matching = simple_matching;
-#active_buttons = 5;
-#button_codes = 1, 2, 0, 11, 22;
+response_matching = simple_matching;
+active_buttons = 5;
+button_codes = 1, 2, 0, 11, 22;
 begin;
 
 TEMPLATE "words.tem";

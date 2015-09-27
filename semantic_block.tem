@@ -1,6 +1,6 @@
 trial{
 	start_delay = 0;#$start_delay;
-	trial_duration = 19000;#stimuli_length;
+	trial_duration = 14000;#stimuli_length;
 	
 	stimulus_event{
 		picture{
@@ -30,7 +30,7 @@ trial{
 		} caption_1_pic;
 		#code     = caption_1;
 		time     = 300;
-		duration = 100;
+		duration = 300;
 	} show_caption_1;
 	
 	stimulus_event{	
@@ -43,7 +43,7 @@ trial{
 			y = 0;
 		} caption_2_pic;
 		deltat   = 600;
-		duration = 100;
+		duration = 300;
 		#code     = caption_2;
 	} show_caption_2;
 	
@@ -57,7 +57,7 @@ trial{
 			y = 0;
 		} caption_3_pic;
 		deltat   = 600;
-		duration = 100;
+		duration = 300;
 		#code     = caption_3;
 	} show_caption_3;
 	
@@ -71,7 +71,7 @@ trial{
 			y = 0;
 		} caption_4_pic;
 		deltat   = 600;
-		duration = 100;
+		duration = 300;
 		#code     = caption_4;
 	} show_caption_4;
 	
@@ -85,10 +85,10 @@ trial{
 		base_filename = "C:/Documents and Settings/Admin/Рабочий стол/Experiments/Nastia PhD/recorded_responces/response";
 		use_counter   = false;
 		use_date_time = true;
-		duration		  = 10000;
+		duration		  = 1000;
 	} sound_response_recording_event; 
 	deltat   = 300;
-	duration = 10000;
+	duration = 1000;
 	
 } current_semantic_block;
 
