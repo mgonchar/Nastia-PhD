@@ -204,12 +204,12 @@ for i in range(0,9):
         }.get(current_design[i][2])
 
         subprocess.call([path_to_presentation_launcher, '-e',path_to_experiment_folder+'\\testo.exp', '-s', path_to_experiment_folder+'\\'+cur_al+'_'+cur_st+'_'+cur_df+'_series.sce', '-n', subject_id, '-o','-l', path_to_experiment_folder+'/logs/'+
-                        subject_id+'/'+subject_id+'_'+current_design[i]+'.log'])
+                        subject_id+'/'+subject_id+'_trainind_'+current_design[i]+'.log'])
         #print(path_to_presentation_launcher+ ' -s ' + cur_al+'_'+cur_st+'_'+cur_df+'_series.sce '+ ' -n '+ subject_id+ ' -l '+ path_to_experiment_folder+'/'+
         #                subject_id+'/'+subject_id+'_'+current_design[i]+'.log')
     else:
         subprocess.call([path_to_presentation_launcher, '-e',path_to_experiment_folder+'\\testo.exp', '-s', path_to_experiment_folder+'/no_action_series.sce', '-n', subject_id, '-o','-l', path_to_experiment_folder+'/logs/'+
-                        subject_id+'/'+subject_id+'_'+current_design[i]+'.log'])
+                        subject_id+'/'+subject_id+'_training_'+current_design[i]+'.log'])
         #print(path_to_presentation_launcher+ ' -s '+ 'no_action_series.sce'+ ' -n '+ subject_id+ ' -l '+ path_to_experient_folder+'/'+
         #                subject_id+'/'+subject_id+'_'+current_design[i]+'.log')
 

@@ -85,10 +85,10 @@ trial{
 		base_filename = "C:/Documents and Settings/Admin/Рабочий стол/Experiments/Nastia PhD/recorded_responces/response";
 		use_counter   = false;
 		use_date_time = true;
-		duration		  = 1000;
+		duration		  = 5000;
 	} sound_response_recording_event; 
 	deltat   = 300;
-	duration = 1000;
+	duration = 5000;
 	
 } current_semantic_block;
 
